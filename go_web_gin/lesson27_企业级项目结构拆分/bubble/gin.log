@@ -1,0 +1,45 @@
+--------------------foo bar----------------
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] GET    /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] HEAD   /static/*filepath         --> github.com/gin-gonic/gin.(*RouterGroup).createStaticHandler.func1 (3 handlers)
+[GIN-debug] Loaded HTML Templates (3): 
+	- favicon.ico
+	- index.html
+	- 
+
+[GIN-debug] GET    /                         --> bubble/controller.IndexHandler (3 handlers)
+[GIN-debug] POST   /v1/todo                  --> bubble/controller.CreateTodo (3 handlers)
+[GIN-debug] GET    /v1/todo                  --> bubble/controller.GetTodoList (3 handlers)
+[GIN-debug] PUT    /v1/todo/:id              --> bubble/controller.UpdateATodo (3 handlers)
+[GIN-debug] DELETE /v1/todo/:id              --> bubble/controller.DeleteATodo (3 handlers)
+[GIN-debug] Environment variable PORT is undefined. Using port :8080 by default
+[GIN-debug] Listening and serving HTTP on :8080
+[INFO]    |2020-03-26 16:47:33|   ------------Info |:  创建一条信息！
+[GIN] 2020/03/26 - 16:47:33 | 200 |  143.382858ms |             ::1 | POST     /v1/todo
+[INFO]    |2020-03-26 16:47:33|   ------------Info |:  获得所有信息！
+[GIN] 2020/03/26 - 16:47:33 | 200 |    32.64262ms |             ::1 | GET      /v1/todo
+[INFO]    |2020-03-26 16:47:35|   ------------Info |:  创建一条信息！
+[GIN] 2020/03/26 - 16:47:35 | 200 |  136.408818ms |             ::1 | POST     /v1/todo
+[INFO]    |2020-03-26 16:47:35|   ------------Info |:  获得所有信息！
+[GIN] 2020/03/26 - 16:47:35 | 200 |   31.055797ms |             ::1 | GET      /v1/todo
+[INFO]    |2020-03-26 16:47:36|   ------------Info |:  创建一条信息！
+[GIN] 2020/03/26 - 16:47:36 | 200 |  140.357515ms |             ::1 | POST     /v1/todo
+[INFO]    |2020-03-26 16:47:36|   ------------Info |:  获得所有信息！
+[GIN] 2020/03/26 - 16:47:36 | 200 |    32.92543ms |             ::1 | GET      /v1/todo
+[INFO]    |2020-03-26 16:47:37|   ------------Info |:  创建一条信息！
+[GIN] 2020/03/26 - 16:47:37 | 200 |  135.179959ms |             ::1 | POST     /v1/todo
+[INFO]    |2020-03-26 16:47:37|   ------------Info |:  获得所有信息！
+[GIN] 2020/03/26 - 16:47:37 | 200 |     30.9889ms |             ::1 | GET      /v1/todo
+[INFO]    |2020-03-26 16:47:39|   ------------Info |:  删除一条信息！
+[GIN] 2020/03/26 - 16:47:39 | 200 |  142.257617ms |             ::1 | DELETE   /v1/todo/65
+[INFO]    |2020-03-26 16:47:40|   ------------Info |:  删除一条信息！
+[GIN] 2020/03/26 - 16:47:40 | 200 |  129.886026ms |             ::1 | DELETE   /v1/todo/66
+[INFO]    |2020-03-26 16:47:40|   ------------Info |:  删除一条信息！
+[GIN] 2020/03/26 - 16:47:40 | 200 |  132.207805ms |             ::1 | DELETE   /v1/todo/67
+[INFO]    |2020-03-26 16:47:40|   ------------Info |:  删除一条信息！
+[GIN] 2020/03/26 - 16:47:40 | 200 |  134.868802ms |             ::1 | DELETE   /v1/todo/68

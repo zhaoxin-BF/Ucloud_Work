@@ -117,8 +117,11 @@ class Login extends Component {
   * 包装Form组件生成一个新的组件；Form(form)
   * 新的组件会向Form组件传递一个强大的对象属性：form
   */
+
 const WrapLogin = Form.create()(Login)//高阶函数
 export default WrapLogin
+
+export default Form.create()(Login)
 
 
 /*
